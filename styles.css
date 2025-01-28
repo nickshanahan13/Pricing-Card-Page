@@ -1,5 +1,126 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+:root {
+    --black: #191b1d;
+    --dark-grey: #22262c;
+    --pink: #bc1e4a; 
+}
+
+body {
+    background-color: var(--black);
+    max-width: 90%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 100px;
+}
+
+.title{
+    text-align: center;
+    margin: 60px 0;
+}
+
+.price-card {
+    background-color: var(--dark-grey);
+    border-radius: 5px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+#pricing {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.card-header {
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    text-align: center;
+}
+
+.card-price {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.month {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.month > span {
+    margin-right: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 60px 0;
+    text-align: left;
+    height: 250px;
+    margin-left: 2rem;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+ul li::before {
+    content: "\2022";
+    font-size: 18px;
+    color: var(--pink);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.price-btn {
+    border: 1px solid var(--pink);
+    padding: 12px;
+    border-radius: 3px;
+    background-color: inherit;
+    color: white;
+    width: 200px;
+}
+
+
+.price-btn.active {
+    background-color: var(--pink);
+}
+
+.banner {
+    background-color: var(--pink);
+    border-radius: 00 10px 10px;
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto 10px auto;
+    left: calc(50% - 200px);
+    position: fixed;
+    top: 0;
+}
+
+.banner-text-light {
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 2px;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 800px) {
+    #pricing {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    
+    }
+};

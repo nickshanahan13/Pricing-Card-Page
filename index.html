@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Pricing Card Page</title>
 </head>
 <body>
-    <h1 id="app">Take your skills to the next level!</h1>
+    <div class="banner">
+        <p class="banner-text-light">Your current plan</p>
+        <p class="card-header">Starter Trial * 500MAUs</p>
+    </div>
+    <h1 class="title">Choose a Plan</h1>
+    <div id="pricing">
+        <div class="price-card">
+            <p class="card-header">Starter</p>
+            <p class="card-price">$19</p>
+            <ul>
+                <li>500 MAUs</li>
+                <li>3 Projects</li>
+                <li>Unlimited guides</li>
+                <li>Unlimited flows</li>
+                <li>Unlimited branded themes</li>
+                <li>Email support</li>
+            </ul>
+            <button class="price-btn" id="price-1-btn">Choose Plan</button>
+        </div>
+        <div class="price-card">
+            <p class="card-header">Pro</p>
+            <p class="card-price">$99<span class="month"><span>/</span>month</span></p>
+            <ul>
+                <li>All starter features, plus:</li>
+                <li>Unlimited projects</li>
+                <li>Unlimited fully customizable themes</li>
+                <li>A dedicated Customer Success Manager</li>
+            </ul>
+            <button class="price-btn active" id="price-2-btn">Choose Plan</button>
+        </div>
+        <div class="price-card">
+            <p class="card-header">Enterprise</p>
+            <p class="card-price">Let's Talk!</p>
+            <ul>
+                <li>All Pro features</li>
+                <li>Unlimited MAUs</li>
+                <li>Dedicated enviornment</li>
+                <li>Enterprise account administration</li>
+                <li>Premium support and services</li>
+            </ul>
+            <button class="price-btn" id="price-3-btn">Contact Us</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
